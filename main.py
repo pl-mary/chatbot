@@ -6,7 +6,7 @@ from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters.state import StatesGroup, State
 from dotenv import dotenv_values
 
-API_TOKEN = "6229195886:AAFgI4TsQqEiiIaLwvdAWaIdax6BqNoCekQ"
+API_TOKEN = dotenv_values(".env").get('BOT_TOKEN')
 
 logging.basicConfig(level=logging.INFO)
 
